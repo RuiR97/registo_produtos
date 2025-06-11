@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "539115876304",
+    "project_id": "listaspartilhadas",
+    "storage_bucket": "listaspartilhadas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539115876304:android:8d4c22658e87dcf1b4d3d5",
+        "android_client_info": {
+          "package_name": "com.example.listaspartilhadas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnlLA8we9Nosl-I2oY7kvbaWH53fLyjb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,9 @@
+plugins {
+    id("com.android.application") version "8.7.3" apply false
+    id("com.google.gms.google-services") version "4.4.1" apply false
+}
+
+
 allprojects {
     repositories {
         google()
@@ -19,3 +25,4 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
+

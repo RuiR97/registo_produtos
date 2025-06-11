@@ -11,6 +11,7 @@ dependencies:
 
   # Armazenamento local com SQLite
   sqflite: ^2.3.2
+  sqflite_common_ffi: ^2.3.0
   path_provider: ^2.1.2
 
   # Ícones e material design

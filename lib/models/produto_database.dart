@@ -1,13 +1,23 @@
-import 'package:sqflite/sqflite.dart';
+import 'dart:io';
 import 'package:path/path.dart';
+import 'package:sqflite/sqflite.dart';
 import 'produto.dart';
+
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 class ProdutoDatabase {
   static Database? _database;
 
   static Future<Database> get database async {
     if (_database != null) return _database!;
+
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      sqfliteFfiInit();
+      databaseFactory = databaseFactoryFfi;
+    }
+
     final path = join(await getDatabasesPath(), 'produtos.db');
+
     _database = await openDatabase(
       path,
       version: 1,
